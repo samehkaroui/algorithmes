@@ -1,0 +1,33 @@
+BEGIN
+    
+    longueur <- 0
+    nombre_de_mots <- 1 
+    nombre_de_voyelles <- 0
+    
+    
+    voyelles <- ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'] 
+    
+    write "Entrez une phrase qui se termine par un point : "
+    Read phrase
+    
+    FOR i FROM 0 TO length(phrase)-1 STEP 1 DO
+    
+        longueur <- longueur + 1  
+        
+        
+        if caractere = ' ' do
+            nombre_de_mots <- nombre_de_mots + 1  
+        end if
+        
+        
+        if caractere DANS voyelles do
+            nombre_de_voyelles <- nombre_de_voyelles + 1  
+        end if
+    end if
+    
+    
+    write "Longueur de la phrase : ", longueur
+    write "Nombre de mots : ", nombre_de_mots
+    write "Nombre de voyelles : ", nombre_de_voyelles
+    
+END
